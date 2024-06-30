@@ -239,6 +239,8 @@ h1{
   background-color: #000;
   width: 80px;
   padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -812,6 +814,7 @@ footer p{
   color: #575656;
   cursor: pointer;
 }
+
 
 
  
