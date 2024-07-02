@@ -483,6 +483,71 @@ h1{
  .help{
   display: none;
  }
+
+ .converse1{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-left: 200px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  position: relative;
+}
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.first-converse,
+.pick-up,
+.results{
+  display: none;
+}
+.converse-content p{
+  font-weight: 700;
+}
+.converse-content h6{
+  color: #b1afaf;
+}
+.converse-side-bar{
+  position: fixed;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  font-weight: 700;
+  margin-left: 20px;
+  overflow-y: scroll;
+  z-index: 400;
+  margin-top: 300px;
+}
+.converse-side-bar a{
+  font-size: 14px;
+}
+.line2{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(212, 212, 212);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.converse-items{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+ /* .looking{
+  position: relative;
+ }
+ .looking img{
+  position: relative;
+ }
+ .looking .converse-content{
+  position: absolute;
+  bottom: 20px;
+ } */
  
 
 
@@ -814,7 +879,58 @@ footer p{
   color: #575656;
   cursor: pointer;
 }
+.left1 h1{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
+}
+.filter{
+  display: none;
+}
+.converse{
+  display: flex;
+  flex-direction: column;
+}
+.first-converse, .pick-up{
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  column-gap: 20px;
+  cursor: pointer;
+}
+.line1{
+  width: 100%;
+  height: 1px;
+  background-color: #dad6d6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.results{
+  color: #adadad;
+  padding-right: 60%;
+}
+.converse1{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.converse-content p{
+  font-weight: 700;
+}
+.converse-content h6{
+  color: #b1afaf;
+}
 
 
  
@@ -861,6 +977,11 @@ footer p{
    .part6 p{
     font-size: 12px;
 
+   }
+
+   .converse1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
    }
   
 }
