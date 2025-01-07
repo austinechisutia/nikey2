@@ -32,6 +32,26 @@ img{
 .logos{
   margin-left: 20px;
 }
+.icon-num{
+  display: flex;
+  position: relative;
+}
+.num{
+  font-size: 12px;
+  color: #575656;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  background-color: red;
+  width: 15px;
+  height: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color : #fff;
+  font-weight: 700;
+}
 nav ul{
   display: flex;
   margin-right: 20px;
@@ -512,6 +532,7 @@ img{
 }
 .converse-side-bar{
   position: fixed;
+  width: 150px;
   left: 10px;
   top: 0;
   bottom: 0;

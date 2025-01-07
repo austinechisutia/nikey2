@@ -1,33 +1,23 @@
+import { products } from "./products.js";
+
+let productsHTML = "";
+products.forEach((product)=>{
+  productsHTML += `
+    <div class="one" data-product-id="${product.id}">
+          <img src="${product.image}" alt="">
+        </div>
+  `
+  console.log(productsHTML)
+})
+const sneakers = document.querySelector(".js-part4-images");
+sneakers.innerHTML = productsHTML;
+
+document.querySelectorAll(".js-part4-images").forEach((sneaker)=>{
+  sneaker.addEventListener("click", ()=>{
+    const productId = sneaker.dataset.productId;
+    console.log(productId);
+  })
+})
 
 
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("now");
-console.log(header)
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-// function myFunction() {
-//   document.getElementById("dropDown").classList.toggle("show");
-// }
-
-
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
